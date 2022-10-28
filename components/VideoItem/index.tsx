@@ -6,16 +6,17 @@ import styles from './videoItem.module.css';
 
 const VideoItem = ({ video, video: { snippet }, onVideoClick, display }: any) => {
     const displayType = display === 'list' ? styles.list : styles.grid;
+    console.log(snippet.thumbnail);
     return (
         <li className={`${styles.container} ${displayType}`} onClick={() => onVideoClick(video)}>
             <div className={styles.video}>
-                {/* <Image
+                <Image
                     className={styles.thumbnail}
-                    src={snippet.thumbnails.medium.url}
+                    src={snippet.thumbnails.medium.url || undefined}
                     width={snippet.thumbnails.medium.width}
                     height={snippet.thumbnails.medium.height}
                     alt="video thumbnail"
-                /> */}
+                />
                 <div className={styles.metadata}>
                     <p className={styles.title}>{snippet.title}</p>
                     <p className={styles.channel}>{snippet.channelTitle}</p>

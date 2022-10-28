@@ -8,11 +8,18 @@ const nextConfig = {
                 source: '/v3/:path*',
                 destination: `https://www.googleapis.com/youtube/v3/:path*`,
             },
-            {
-                source: '/vi/:path*',
-                destination: `https://i.ytimg.com/vi/:path*`,
-            },
         ];
+    },
+    images: {
+        formats: ['image/avif', 'image/webp'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'i.ytimg.com',
+                port: '',
+                pathname: '/vi/**',
+            },
+        ],
     },
 };
 
