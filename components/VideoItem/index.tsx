@@ -6,7 +6,7 @@ import styles from './videoItem.module.css';
 
 const VideoItem = ({ video, video: { snippet }, onVideoClick, display }: any) => {
     const displayType = display === 'list' ? styles.list : styles.grid;
-    console.log(snippet.thumbnail);
+
     return (
         <li className={`${styles.container} ${displayType}`} onClick={() => onVideoClick(video)}>
             <div className={styles.video}>
