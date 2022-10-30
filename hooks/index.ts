@@ -1,1 +1,1 @@
-export {};
+export { useQueryGetVidioList } from './useQuerys';

@@ -1,0 +1,1 @@
+export { useQueryGetVidioList } from './useQueryGetVidioList';
