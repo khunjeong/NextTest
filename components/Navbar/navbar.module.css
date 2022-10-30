@@ -1,5 +1,7 @@
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 4rem;
     padding: 0.8em 1em;
     background: black;
@@ -10,4 +12,22 @@
     display: flex;
     align-items: center;
     margin-right: 1em;
+    gap: 1rem;
+}
+
+.link_list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.link_list li {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.link_list li:hover {
+    transform: scale(1.2);
 }

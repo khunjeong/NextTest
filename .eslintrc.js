@@ -16,8 +16,13 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
         'react/react-in-jsx-scope': 'off',
+    },
+    settings: {
+        react: {
+            version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
+        },
     },
 };
