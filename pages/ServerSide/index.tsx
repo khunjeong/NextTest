@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styles from '../../styles/Home.module.css';
 import { VideoList } from '../../components';
 import { getVideoList } from '../../services';
@@ -12,8 +13,11 @@ interface IProps {
 const Home: NextPage<IProps> = (props) => {
     const [selectedVideo, setSelectedVideo] = useState(null);
 
+    const router = useRouter();
+
     const selectVideo = (video: any) => {
         setSelectedVideo(video);
+        router.push(`/ServerSide/${video.id}`);
     };
 
     return (
