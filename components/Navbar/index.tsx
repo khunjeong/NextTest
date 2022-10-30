@@ -9,8 +9,10 @@ const Navbar = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Image className={styles.img} src={Logo} alt="logo" />
-                <h1 className={styles.title}>너튜브</h1>
+                <Link href={'/'}>
+                    <Image className={styles.img} src={Logo} alt="logo" />
+                </Link>
+                <h1 className={styles.title}>✪✪✪</h1>
             </div>
             <ul className={styles.link_list}>
                 <li>

@@ -13,6 +13,7 @@
     align-items: center;
     margin-right: 1em;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .link_list {
