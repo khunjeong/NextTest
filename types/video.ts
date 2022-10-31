@@ -1,4 +1,4 @@
-export default interface IVideoItem {
+export interface IVideoItem {
     kind: string;
     etag: string;
     id: string;

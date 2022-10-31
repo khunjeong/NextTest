@@ -5,8 +5,7 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/Home.module.css';
 import { VideoList } from '../../components';
 import { getVideoList } from '../../services';
-import { IPageProps } from '../../types';
-
+import { IPageProps } from '../../types/page';
 
 const Home: NextPage<IPageProps> = (props) => {
     const [selectedVideo, setSelectedVideo] = useState(null);

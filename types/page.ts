@@ -1,6 +1,6 @@
-import IVideoItem from './video';
+import { IVideoItem } from './video';
 
-export default interface IPageProps {
+export interface IPageProps {
     kind: string;
     etag: string;
     items: IVideoItem[];
